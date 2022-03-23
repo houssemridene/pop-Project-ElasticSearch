@@ -1,0 +1,62 @@
+*dataset
+1-preparer un dataset(base de donnès qui contient des exemples) (generalement sur excel)
+
+
+
+dans le dataset(X,Y) il y'a:
+1-features(les facteurs qui vont influencè la valeur Y ;  X=(x1,x2,x3,...))
+2-target y : la valeur quand va chercher
+
+
+*apprentissage supervisè: comme si ena el professeur et je donne des exemples a la machine
+association entre X et Y : f(X) = Y
+1-regression(y:variable discrète - nombre fini de valeurs de y)
+2-classification(y:variable continue - nombre infini de valeurs de y)
+
+
+**modèle
+exemple f(x): ax(carre) + b ; 
+paramètres: 
+a et b
+
+
+***fonction cout
+
+la marge d'erreur entre le dataset(y) et la courbe(prediction) (yaaani c bon el machine t3almet w 3tat el courbe y 7asb mat3almet hiya:"prediction du modèle")
+plus il y'a des erreurs plus la fonction cout est grande
+
+****algorithme de minimisation 
+strategie qui cherche a determiner les parametres a,b,c... qui minimisent la fonction cout cad l'ensemble de nos erreurs
+
+
+
+//resumè sur le projet PFA:
+1-decision tree sur la base de donnes pour verifier est ce que le patient a un risque de covid ou non avec l'algorithme de decision tree
+2-on a pris une base de donnès qui contient des images des poumons sains et atteint de covid , et on a fait cleaning data(yetsama zeda data-preprocessing) pour mettre
+les images dans un meme taille,filling the missing values.. bech nekhdem alihom l'algorithme CNN(algorithme utilisé pour la reconnaissance et la classification d'images/d'objets.) 
+3-on entre l'input=base de donnes d'images de poumons ( apres cleaning data) dans CNN et on insere une image de poumons d'un patient et le CNN  nous dit
+est ce que il est atteint de covid-19 ou non .  
+
+
+
+//biblèotheques
+1-numpy :pour manipuler les matrices
+2-Matplotlib:tracer et visualiser des données sous formes de graphiques
+3-pandas:la manipulation et l'analyse des données(kima par exemple pandas.read_csv('fichier.csv') 
+yaani takralek el fichier csv elli howa input data en excel)
+4-sklearnn contient {
+1*Classification:Identifier à quelle catégorie appartient un objet.
+2*Regression:Prédiction d'un attribut à valeur continue associé à un objet.
+3*Clustering:Regroupement automatique d'objets similaires en ensembles.
+4*Dimensionality reduction:Réduire le nombre de variables aléatoires à considérer.
+5*Model selection:Comparer, valider et choisir des paramètres et des modèles.
+6*Preprocessing:Extraction et normalisation de caractéristiques.}
+5-tenserflow:training models,erving predictions..
+6-open cv : traitement d'images en temps réel
+
+
+
+
+
+
+
